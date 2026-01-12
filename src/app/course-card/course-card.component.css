@@ -1,0 +1,14 @@
+.card{
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+button{
+    background-color: aqua;
+}
