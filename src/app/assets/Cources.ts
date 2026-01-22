@@ -2,7 +2,7 @@ export const Cources:any =[
     {
         id:1,
         Heading:"Heading_1",
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUm_-KXte5eYQ7O-SMzVZBUk6NvOtcco8dA&s',
+        // img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUm_-KXte5eYQ7O-SMzVZBUk6NvOtcco8dA&s',
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quas, obcaecati exercitationem aliquid ut labore ratione atque ab minus saepe laborum ducimus corrupti nostrum eum soluta. Consequatur accusantium delectus commodi."
     },
     {
@@ -14,7 +14,7 @@ export const Cources:any =[
     {
         id:3,
         Heading:"Heading_3",
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tC9Df9b3UXMpTom0hyb0bAzyNHXalr6aWA&s',
+        // img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tC9Df9b3UXMpTom0hyb0bAzyNHXalr6aWA&s',
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quas, obcaecati exercitationem aliquid ut labore ratione atque ab minus saepe laborum ducimus corrupti nostrum eum soluta. Consequatur accusantium delectus commodi."
     },
      {

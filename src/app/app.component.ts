@@ -4,12 +4,14 @@ import { CourseCardComponent } from './course-card/course-card.component';
 import { Cources } from './assets/Cources';
 import { cource } from './model/cources';
 import { CommonModule } from '@angular/common';
+import { ParentComponent } from './component/parent/parent.component';
+import { PipesComponent } from './component/pipes/pipes.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CourseCardComponent,CommonModule],
+  imports: [RouterOutlet,CourseCardComponent,CommonModule,ParentComponent,PipesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

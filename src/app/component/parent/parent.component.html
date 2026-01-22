@@ -1,0 +1,22 @@
+
+<div > <h1>parent to child using Input()</h1>
+<app-child [id]="course_1.id" [Heading]="course_1.Heading" [description]="course_1.description" ></app-child>
+<br>
+<app-child [id]="course_2.id" [Heading]="course_2.Heading" [description]="course_2.description" ></app-child>
+<br>
+<app-child [id]="course_3.id" [Heading]="course_3.Heading" [description]="course_3.description" ></app-child>
+</div>
+
+<div>
+    <h1>Child to parent Using Output()</h1>
+    <app-child (sendData)="receivedata($event)"></app-child>
+    
+ <div *ngIf="getdata">
+  <p>Id: {{ getdata.id }}</p>
+  <p>Heading: {{ getdata.heading }}</p>
+  <p>Description: {{ getdata.description }}</p>
+</div>
+
+</div>
+
+

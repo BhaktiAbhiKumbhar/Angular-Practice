@@ -1,0 +1,81 @@
+<h1>pipes works!</h1>
+
+<h3>date pipes</h3>
+
+<div>start date ---- {{startDate | date}}</div>
+<div>Full date ---- {{startDate | date : 'fullDate'}}</div>
+<div>short date ---- {{startDate | date : 'shortDate'}}</div>
+<div>Medium date ---- {{startDate | date : 'mediumDate'}}</div>
+<div>Long date ---- {{startDate | date : 'longDate'}}</div>
+<div>format date ---- {{startDate | date : 'mm/dd/yy'}}</div>
+<div>string format date ---- {{startDate | date : 'dd-mmm-yyyy'}}</div>
+
+<h3>String pipe</h3>
+
+<div> {{title}}</div>
+<div>{{title | uppercase}}</div>
+<div>{{title | lowercase}}</div>
+<div>{{title | titlecase}}</div>
+<div>{{title | slice : 0:4}}</div>
+<div>{{title | slice : 0:9}}</div>
+
+<div *ngFor="let cource of cources | slice:0:2">
+    {{cource.Heading}} </div>
+
+<h3>keyvalue pipe</h3>
+
+<div *ngFor="let pair of cources | keyvalue">
+    {{pair.key + "--" + pair.value}}
+</div>
+<br>
+
+<!-- Q: When do we use keyvalue pipe?
+👉 When iterating over object properties, not arrays.
+
+key → index
+value → object
+
+cources is an ARRAY
+keyvalue pipe is meant for OBJECTS, not arrays
+When used on an array:
+key → index (0,1,2…)
+value → entire object → printed as [object Object]
+That’s why you see this. -->
+
+<div *ngFor="let pair of Course | keyvalue">
+    {{pair.key + "--" + pair.value}}
+</div>
+
+
+<h3>Number pipe</h3>
+
+<div>{{price}}</div>
+<div>{{price | number}}</div>
+<div>{{price | number  : '3.3'}}</div>
+<div>{{price | number : '3.3-5'}}</div>
+                                     <!-- maximum 5 fraction digits  -->
+<div>{{price | currency}}</div>
+<div>{{price | currency : 'EUR'}}</div>
+<div>{{price | currency : 'INR'}}</div>
+<div>{{rate | percent}}</div>
+
+<h3>Json type this is very usefull for the dibugging process</h3>
+<div>{{cources | json}}</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
